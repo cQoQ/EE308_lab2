@@ -2,7 +2,7 @@
 #include <vector>
 #include <fstream>
 #include <string>
-#include <cstdlib> // needed for exit()
+#include <cstdlib>
 #include <stack>
 using namespace::std;
 const string keywords[] = {"auto","break","case","char","const","continue","default","do",
@@ -138,7 +138,7 @@ void cal_switch_case_num(){
             switch_num += 1;
             last += 1;
         }
-        if (line.find("case") != line.npos && involve_judge(line, "case")) {        /*2¨¦?¨°case*/
+        if (line.find("case") != line.npos && involve_judge(line, "case")) {        /*2Â¨Â¦?Â¨Â°case*/
             case_num[last] += 1;
         }
     }
